@@ -1,0 +1,238 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252729;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    margin: 48px;
+    padding: 1.5rem;
+    border: 6px solid #282828;
+    border-radius: 50%;
+    box-shadow: -8px -8px 12px #363036,
+        inset 8px 8px 12px #283628,
+        inset -8px -8px 12px rgba(67, 67, 67, 0.4),
+        8px 8px 12px #363636;
+}
+
+.outer-clock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #282828;
+}
+
+.outer-clock::before,
+.outer-clock::after,
+.outer-clock .marking {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #B5B5B5;
+    z-index: 0;
+    left: 49%;
+}
+
+.outer-clock::before {
+    background-color: #34BFBF;
+    width: 6px;
+}
+
+.outer-clock::after {
+    transform: rotate(90deg);
+    background-color: #34BFBF;
+    width: 6px;
+}
+
+.outer-clock .marking {
+    width: 1px;
+}
+
+/* pontos pequenos */
+.outer-clock .marking.marking-one {
+    transform: rotate(30deg);
+}
+
+.outer-clock .marking.marking-one2 {
+    transform: rotate(35deg);
+}
+
+.outer-clock .marking.marking-one3 {
+    transform: rotate(40deg);
+}
+
+.outer-clock .marking.marking-one4 {
+    transform: rotate(45deg);
+}
+
+.outer-clock .marking.marking-one5 {
+    transform: rotate(50deg);
+}
+
+.outer-clock .marking.marking-one6 {
+    transform: rotate(55deg);
+}
+
+.outer-clock .marking.marking-one7 {
+    transform: rotate(60deg);
+}
+
+.outer-clock .marking.marking-one8 {
+    transform: rotate(65deg);
+}
+
+.outer-clock .marking.marking-one9 {
+    transform: rotate(70deg);
+}
+
+.outer-clock .marking.marking-one10 {
+    transform: rotate(75deg);
+}
+
+.outer-clock .marking.marking-one11 {
+    transform: rotate(80deg);
+}
+
+.outer-clock .marking.marking-one12 {
+    transform: rotate(85deg);
+}
+
+.outer-clock .marking.marking-one13 {
+    transform: rotate(90deg);
+}
+
+.outer-clock .marking.marking-one14 {
+    transform: rotate(95deg);
+}
+
+.outer-clock .marking.marking-one15 {
+    transform: rotate(100deg);
+}
+
+.outer-clock .marking.marking-one16 {
+    transform: rotate(105deg);
+}
+
+.outer-clock .marking.marking-one17 {
+    transform: rotate(110deg);
+}
+
+.outer-clock .marking.marking-one18 {
+    transform: rotate(115deg);
+}
+
+.outer-clock .marking.marking-one19 {
+    transform: rotate(120deg);
+}
+
+.outer-clock .marking.marking-one20 {
+    transform: rotate(125deg);
+}
+
+.outer-clock .marking.marking-one21 {
+    transform: rotate(130deg);
+}
+
+.outer-clock .marking.marking-one22 {
+    transform: rotate(135deg);
+}
+
+.outer-clock .marking.marking-one23 {
+    transform: rotate(140deg);
+}
+
+.outer-clock .marking.marking-one24 {
+    transform: rotate(145deg);
+}
+
+.outer-clock .marking.marking-one25 {
+    transform: rotate(150deg);
+}
+
+.outer-clock .marking.marking-one26 {
+    transform: rotate(155deg);
+}
+
+.outer-clock .marking.marking-one27 {
+    transform: rotate(160deg);
+}
+
+.outer-clock .marking.marking-one28 {
+    transform: rotate(165deg);
+}
+
+.outer-clock .marking.marking-one29 {
+    transform: rotate(170deg);
+}
+
+.outer-clock .marking.marking-one30 {
+    transform: rotate(175deg);
+}
+
+.outer-clock .marking.marking-one31 {
+    transform: rotate(180deg);
+}
+
+.outer-clock .marking.marking-one32 {
+    transform: rotate(185deg);
+}
+
+.outer-clock .marking.marking-one33 {
+    transform: rotate(190deg);
+}
+
+.outer-clock .marking.marking-one34 {
+    transform: rotate(195deg);
+}
+
+.outer-clock .marking.marking-one35 {
+    transform: rotate(200deg);
+}
+
+.outer-clock .marking.marking-one36 {
+    transform: rotate(205deg);
+}
+
+
+.outer-clock .marking-seconds {
+    background-color: transparent;
+    z-index: 1;
+}
+
+.outer-clock .marking-seconds::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 35px;
+    top: -2px;
+    left: -2px;
+    background-color: #b30303;
+}
+
+.inner-clock {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: #282828;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.inner-clock .clock-time {
+    position: absolute;
+    top: 32%;
+    left: 9.5%;
+    width: 80%;
+    color: #fff;
+    font-size: 96pt;
+    font-weight: 700;
+    text-align: center;
+
+}
